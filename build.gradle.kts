@@ -1,6 +1,6 @@
 plugins {
   java
-  id("org.springframework.boot") version "3.2.7"
+  id("org.springframework.boot") version "3.2.7" // change to 3.3.1 to make it fail
   id("io.spring.dependency-management") version "1.1.5"
   id("io.freefair.lombok") version "8.6"
 }
@@ -23,5 +23,5 @@ dependencies {
 }
 
 tasks.test {
-     useJUnitPlatform()
+  useJUnitPlatform()
 }

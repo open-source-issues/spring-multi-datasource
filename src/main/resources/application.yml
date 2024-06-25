@@ -4,14 +4,14 @@ spring:
     name: foo-service
   datasource:
     writer:
-      jdbc-url: jdbc:h2:mem:write
+      jdbc-url: jdbc:h2:mem:production-write
       poolName: writer-pool
       minimum-idle: 3
       maximum-pool-size: 15
       read-only: false
       auto-commit: false
     reader:
-      jdbc-url: jdbc:h2:mem:read
+      jdbc-url: jdbc:h2:mem:production-read
       poolName: reader-pool
       minimum-idle: 3
       maximum-pool-size: 15
